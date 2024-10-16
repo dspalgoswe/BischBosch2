@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bisch Bosch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bisch Bosch 2.0</h1>
+    
+    <section class="description">
+        <p>Bisch-Bosch studerar hur ett tal, inom ett intervall 1:1:n, är delbart med två olika heltal N. Ange de nämnare 'Bisch' och 'Bosch' som resp. tal skall
+            divideras med. Ange även ett heltal (n) för intervalltak (hur högt loopen skall gå).</p>
+    </section>
+
+    <section class="input-section">
+        <form id="bishbosh-form">
+            <label for="bisch">Nämnare, Bisch:</label>
+            <input type="number" id="bish" name="bish" min="1" required>
+
+            <label for="bosch">Nämnare, Bosch:</label>
+            <input type="number" id="bosh" name="bosh" min="1" required>
+
+            <label for="loopLimit">Intervalltak (hur långt loopen skall gå):</label>
+            <input type="number" id="loopLimit" name="loopLimit" min="1" required>
+
+            <button type="submit">Starta Bish-Bosh</button>
+        </form>
+    </section>
+
+    <section class="output-section">
+        <h2>Resultat:</h2>
+        <div id="output"></div>
+    </section>
+
+    <footer>
+        <p>dspalgoswe © 2024</p>
+    </footer>
+
+    <script src="bishbosh.js"></script>
+</body>
+</html>
